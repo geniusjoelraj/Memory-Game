@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E6E8F4;
+}
+
+.top-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2B87D1;
+  padding: 100px 0 100px;
+  /* display: none; */
+}
+
+.logo{
+  height: 150px;
+  width: 150px;
+  filter: invert(1);
+}
+
+.title > h1{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.description{
+  color: white;
+  font-family: roboto;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.start{
+  background-color: #FFD154;
+  color: #333;
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.start:hover{
+  background-color: white;
+}
+
+.volume{
+  height: 35px;
+  position: absolute;
+  left:5%;
+  top: 70%;
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+.volume:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+footer{
+  margin: 50px 30%;
+  display: inline-block;
+  padding: 2rem;
+  height: 400px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.205);
+}
+
+
+footer > h1{
+  font-family: roboto;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.info{
+  color: #333;
+  font-family: roboto;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+
+.game-container{
+  background-color: #2B87D1;
+  padding: 50px 0 35px;
+  display: none;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  gap: 20px;
+  place-content: center;
+}
+
+.level{
+  color: #AACFED;
+  font-family: roboto;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.levelNo{
+  color: white;
+}
+
+.box{
+  background-color: #2573C1;
+  height: 110px;
+  width: 110px;
+  border-radius: 10px;
+  
+}
+
+.click{
+  position: absolute;
+}
+
+.color-transition {
+  background-color: white;
+  transition: background-color 0.1s ease;
+}
+
+.gameOver-container{
+  background-color: #2B87D1;
+  color: white;
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 4.4rem 2rem;
+  display: none;
+}
+
+.player-score{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+
+}
+
+.game-over{
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.try-again{
+  background-color: #FFD154;
+  color: #333;
+  border: none;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+
+.try-again:hover{
+  background-color: white;
+}
+
+.overlay-white{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 540px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.349);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay-red{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 540px;
+  width: 100%;
+  background-color: rgba(255, 63, 63, 0.527);
+  z-index: 1000;
+  display: none;
+}

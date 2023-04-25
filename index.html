@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="icon" href="./images/puzzle.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <main class="top-container">
+      <div><img class="logo" src="./images/puzzle.png" alt="logo"></div>
+      <div class="title"><h1>Memory Test</h1></div>
+      <div class="description">Memorise the pattern.</div>
+      <div><button class="start">Start</button></div>
+      <img class="volume" src="./images/volume.png" alt="vol">  
+    </main>
+    <div class="game-container">
+      <h1 class="level">Level: <span class="levelNo">1</span></h1>
+      <!-- <button class="click">click</button> -->
+      <div class="grid-container">
+        <div class="box" id="box-1"></div>
+        <div class="box" id="box-2"></div>
+        <div class="box" id="box-3"></div>
+        <div class="box" id="box-4"></div>
+        <div class="box" id="box-5"></div>
+        <div class="box" id="box-6"></div>
+        <div class="box" id="box-7"></div>
+        <div class="box" id="box-8"></div>
+        <div class="box" id="box-9"></div>  
+      </div>
+      <img class="volume" src="./images/volume.png" alt="vol">
+    </div>
+    <div class="gameOver-container">
+      <img class="logo" src="./images/puzzle.png" alt="logo">
+      <div class="game-over">Game Over</div>
+      <h1 class="player-score">Level <span class="final-level">1</span></h1>
+      <p class="message">Better Luck next time.</p>
+      <div>
+      <button class="try-again">Try Again</button>
+      </div>
+      <img class="volume" src="./images/volume.png" alt="vol">
+    </div>
+    <footer class="bottom-container">
+      <h1>About the test</h1>
+      <p class="info">
+        Memorize the sequence of buttons that light up, then press them in order. <br><br>
+        Every time you finish the pattern, it gets longer. <br><br>
+        Make a mistake, and the test is over.
+      </p>
+    </footer>
+    <div class="overlay-white"></div>
+    <div class="overlay-red"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
